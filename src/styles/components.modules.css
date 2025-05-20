@@ -1,0 +1,58 @@
+/**
+Styling for the SideBar component
+*/
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+  padding: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1em;
+    ul{
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+    li{
+        margin: 10px 0;
+            text-decoration: none;
+            color: #000;
+            font-weight: 430;
+            font-size: 16px;
+            &:hover{
+                color: #fff7f9;
+                cursor: pointer;
+                transition: all 0.1s ease;
+            }
+    }
+}
+.menuItem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 430;
+    &:hover{
+        background-color: #ef637c;
+        cursor: pointer;
+    }
+    p{
+        margin: 0;
+        text-align: left;
+        width: 60%;
+    }
+}

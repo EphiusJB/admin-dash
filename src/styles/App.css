@@ -1,0 +1,21 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Mainlayout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 99vh;
+  border: solid 1px;
+}
+.Mainlayout .left{
+  width: 15%;
+  height: 100%;
+  background-color: #ccc;
+}
+.Mainlayout .right{
+  width: 78%;
+  height: 100%;
+}
