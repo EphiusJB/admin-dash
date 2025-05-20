@@ -56,3 +56,65 @@ Styling for the SideBar component
         width: 60%;
     }
 }
+
+/**
+Styling for the TopBar component
+**/
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.searchBox{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 40%;
+    height: 40px;
+    padding: 0 20px;
+    input{
+        width: 80%;
+        height: 100%;
+        border: transparent;
+        border-bottom: solid 2px #ccc;
+        outline: none;
+        padding-left: 10px;
+        font-size: 16px;
+        color: #242424;
+        background-color: transparent;
+    }
+}
+.searchBtn{
+    display: flex;
+    align-items: center;
+    width: 30px;
+    padding: 0.3rem;
+    &:hover{
+        background-color: #ccc;
+        cursor: pointer;
+        transition: all 0.1s ease;
+    }
+    .icon{
+        width: 20px;
+        height: 25px;
+    }
+}
+.opts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.opt{
+    width: 30px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 100px;
+    &:hover{
+        background-color: #ccc;
+        cursor: pointer;
+    }
+}
+.opt .icon{
+    width: 30px;
+    height: 25px;
+}

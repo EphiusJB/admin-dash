@@ -3,6 +3,7 @@ import '../styles/App.css'
 
 //components imports
 import SideBar from '../components/sideBar.jsx'
+import TopBar from '../components/topBar.jsx'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
         </div>
         <div className="right">
           <div className="header">
-            <h1>Header</h1>
+            <TopBar />
           </div>
           <div className="content">
             <h2>Content</h2>
