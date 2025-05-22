@@ -63,20 +63,19 @@ Styling for the TopBar component
 .topBar {
   display: flex;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 10px;
 }
 .searchBox{
     display: flex;
     justify-content: space-between;
     gap: 10px;
     width: 40%;
-    height: 40px;
+    height: 30px;
     padding: 0 20px;
     input{
         width: 80%;
         height: 100%;
         border: transparent;
-        border-bottom: solid 2px #ccc;
         outline: none;
         padding-left: 10px;
         font-size: 16px;
@@ -88,15 +87,16 @@ Styling for the TopBar component
     display: flex;
     align-items: center;
     width: 30px;
-    padding: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 100px;
     &:hover{
         background-color: #ccc;
         cursor: pointer;
         transition: all 0.1s ease;
     }
     .icon{
-        width: 20px;
-        height: 25px;
+        width: 22px;
+        height: 22px;
     }
 }
 .opts {
@@ -105,7 +105,8 @@ Styling for the TopBar component
   gap: 20px;
 }
 .opt{
-    width: 30px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     padding: 0.5rem;
     border-radius: 100px;
@@ -115,6 +116,6 @@ Styling for the TopBar component
     }
 }
 .opt .icon{
-    width: 30px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 }

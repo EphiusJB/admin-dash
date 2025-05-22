@@ -4,6 +4,7 @@ import '../styles/App.css'
 //components imports
 import SideBar from '../components/sideBar.jsx'
 import TopBar from '../components/topBar.jsx'
+import Dashboard from './Dashboard.jsx'
 
 function App() {
 
@@ -14,15 +15,8 @@ function App() {
           <SideBar />
         </div>
         <div className="right">
-          <div className="header">
             <TopBar />
-          </div>
-          <div className="content">
-            <h2>Content</h2>
-          </div>
-          <div className="footer">
-            <h3>Footer</h3>
-          </div>
+            <Dashboard />
         </div>
       </div>
     </>

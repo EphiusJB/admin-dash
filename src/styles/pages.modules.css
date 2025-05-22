@@ -1,0 +1,70 @@
+/**
+Styling for the dashboard page
+*/
+
+.dashboard {
+  display: flex;
+  height: 95%;
+}
+.dashLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65%;
+  height: 100%;
+  background-color: #f0f0f0;
+  color: #414141;
+}
+.dashRight {
+  width: 35%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.77);
+  border-top-left-radius: 10px;
+}
+.mall-summary{
+    height: 60%;
+    text-align: left;
+    padding: 0.1em 2.5em;
+}
+.recents{
+    height: 40%;
+    text-align: left;
+    padding: 0.1em 2.5em;
+}
+
+/** Table styling **/
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead {
+  background-color: #f9f9f9;
+  color: #555;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.styled-table td:last-child {
+  text-align: center;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+}
