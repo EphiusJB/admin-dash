@@ -1,12 +1,14 @@
 import React from 'react'
 import '../styles/pages.modules.css'
 import Chart from '../components/chart'
-import { useOrders, useStores, useUsers } from '../hooks/customHooks'
+import { useOrders, useProducts, useStores, useUsers } from '../hooks/customHooks'
+import {Icons} from '../assets/IconLibrary'
 
 export default function Dashboard(props) {
     const {stores, storesLoad} = useStores()
     const {users, usersLoad} = useUsers()
     const {orders, ordersLoad} = useOrders()
+    const {products, productsLoad} = useProducts()
 
     console.log(orders);
 
@@ -44,14 +46,44 @@ export default function Dashboard(props) {
                     </div>
                 </div>
                 <div className="dashRight">
-                    <div className="dashCard">
-                        <div className="cardTitle">
-                            <h2>Dashboard</h2>
+                        <div className="stats">
+                            <h4>Statistics</h4>
+                            <div className="statistics">
+                            <div className="stat">
+                                <Icons.StatsBarChart className='barIcon'/>
+                                <p>{stores.length}</p>
+                                <h6>Stores</h6>
+                            </div>
+                            <div className="stat">
+                            <Icons.StatsBarChart className='barIcon'/>
+                                <p>{users.length}</p>
+                                <h6>Users</h6>
+                            </div>
+                            <div className="stat">
+                            <Icons.StatsBarChart className='barIcon'/>
+                                <p>{orders.length}</p>
+                                <h6>Orders</h6>
+                            </div>
+                            <div className="stat">
+                            <Icons.StatsBarChart className='barIcon'/>
+                                <p>{products.length}</p>
+                                <h6>Products</h6>
+                            </div>
+                            </div>
                         </div>
-                        <div className="cardContent">
-                            <p>Welcome to the dashboard!</p>
+                        <div className="transactions">
+                        <h4>Transactions</h4>
+                        { orders.length === 0 ? <p>No transactions yet</p> : orders.map((order) => (
+                        <div className="transaction">
+                            <Icons.Check className='checked'/>
+                            <div className="details">
+                                <h5>Order #{order.id}</h5>
+                                <p>{order.createdAt.slice(0,10)}</p>
+                            </div>
+                            <div className="menuBtn">⋮</div>
                         </div>
-                    </div>
+                                ))} 
+                        </div>
                 </div>
             </div>
         </>

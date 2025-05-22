@@ -10,7 +10,7 @@ Styling for the dashboard page
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 65%;
+  width: 63%;
   height: 100%;
   background-color: #f0f0f0;
   color: #414141;
@@ -20,6 +20,7 @@ Styling for the dashboard page
   height: 100%;
   background-color: rgba(255, 255, 255, 0.77);
   border-top-left-radius: 10px;
+  text-align: left;
 }
 .mall-summary{
     height: 60%;
@@ -34,7 +35,7 @@ Styling for the dashboard page
 
 /** Table styling **/
 .styled-table {
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
   font-size: 12px;
@@ -47,7 +48,7 @@ Styling for the dashboard page
 
 .styled-table thead {
   background-color: #f9f9f9;
-  color: #555;
+  color: #ef637c;
   text-align: left;
 }
 
@@ -63,8 +64,57 @@ Styling for the dashboard page
 }
 
 .styled-table td:last-child {
-  text-align: center;
   font-weight: bold;
   color: #888;
   cursor: pointer;
+}
+
+.stats{
+  width: 90%;
+  margin: 0 auto;
+}
+.statistics{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 0.5em 2.5em;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+.barIcon{
+  width: 20px;
+  height: 20px;
+  color: #ef637c;
+}
+
+.transactions{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.transaction{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  text-align: center;
+}
+.details h5,p{
+  margin: 0;
+}
+.details p{
+  font-size: 12px;
+  text-align: left;
+}
+.checked{
+  width: 20px;
+  height: 20px;
+  color: #0f0f0f;
+  padding: 0.5em 0.5em;
+  border: solid 1px #ccc;
+  border-radius: 10px;
 }

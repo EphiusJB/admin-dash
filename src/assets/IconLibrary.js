@@ -2,7 +2,8 @@
 import {
     FiUser, FiUserPlus, FiLogIn, FiLogOut, FiLock, FiShoppingBag, FiEdit,
     FiBarChart2, FiBox, FiShoppingCart, FiTrash2, FiTruck, FiSettings,
-    FiBell, FiHome, FiMenu, FiSearch, FiArrowLeft, FiHelpCircle, FiMessageSquare
+    FiBell, FiHome, FiMenu, FiSearch, FiArrowLeft, FiHelpCircle, FiMessageSquare,
+    FiTrendingUp, FiCheck
   } from 'react-icons/fi';
   
   import {
@@ -12,10 +13,12 @@ import {
   
   import {
     MdAdminPanelSettings, MdDashboard, MdVerifiedUser, MdAssignment, MdPayment,
-    MdShoppingCartCheckout, MdContactPhone, MdReport, MdPeople
+    MdShoppingCartCheckout, MdContactPhone, MdReport, MdPeople, MdInsertChartOutlined
   } from 'react-icons/md';
   
-  import { BsTags, BsCurrencyDollar } from 'react-icons/bs';
+  import { BsTags, BsCurrencyDollar, BsCheckLg } from 'react-icons/bs';
+  import { BiStats } from 'react-icons/bi';
+  import { RiLineChartLine } from 'react-icons/ri';
   
   export const Icons = {
     // Auth & User
@@ -56,7 +59,16 @@ import {
   Notifications: FiBell,
   Reports: AiOutlineFileText,
   Users: MdPeople,
-  
+  Check: BsCheckLg,
+
+    // Stats Icons
+  StatsBarChart: FiBarChart2,
+  StatsTrendingUp: FiTrendingUp,
+  StatsInsertChart: MdInsertChartOutlined,
+  StatsLineChart: AiOutlineLineChart,
+  StatsBi: BiStats,
+  StatsRemix: RiLineChartLine,
+
     // Navigation
     Home: FiHome,
     Menu: FiMenu,

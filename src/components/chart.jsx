@@ -15,7 +15,7 @@ export default function Chart({docz, loading}) {
 
     return (
         <>
-            <LineChart width={450} height={220} data={data}>
+            <LineChart width={500} height={220} data={data}>
                 <CartesianGrid stroke="#ccc" />
                 <XAxis dataKey="name" />
                 <YAxis />
