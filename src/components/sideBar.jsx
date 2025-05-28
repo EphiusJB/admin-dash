@@ -4,7 +4,7 @@ import '../styles/components.modules.css'
 import {Icons} from '../assets/IconLibrary'
 
 export default function SideBar(props) {
-    const [page, setPage] = useState('Dashboard')
+    const [selected, setSelected] = useState('Dashboard');
     
 
     return (
@@ -15,19 +15,19 @@ export default function SideBar(props) {
                 <div className="menu">
                     <ul>
                         <Link to="/Dashboard">
-                        <li className="menuItem"><Icons.Dashboard /> <p> Dashboard</p></li></Link>
+                        <li className={selected === "Dashboard" ? "active" : ""} onClick={()=> setSelected("Dashboard")} ><Icons.Dashboard /> <p> Dashboard</p></li></Link>
                         <Link to="/stores">
-                        <li className="menuItem"><Icons.Store /> <p> Stores</p></li></Link>
+                        <li className={selected === "stores" ? "active" : ""} onClick={()=> setSelected("stores")}><Icons.Store /> <p> Stores</p></li></Link>
                         <Link to="/products">
-                        <li className="menuItem"><Icons.Product /> <p> Products</p></li></Link>
+                        <li className={selected === "products" ? "active" : ""} onClick={()=> setSelected("products")}><Icons.Product /> <p> Products</p></li></Link>
                         <Link to="/users">
-                        <li className="menuItem"><Icons.Users /> <p>Users</p></li></Link>
+                        <li className={selected === "users" ? "active" : ""} onClick={()=> setSelected("users")}><Icons.Users /> <p>Users</p></li></Link>
                         <Link to="/orders">
-                        <li className="menuItem"><Icons.Orders /> <p>Orders</p></li></Link>
+                        <li className={selected === "orders" ? "active" : ""} onClick={()=> setSelected("orders")}><Icons.Orders /> <p>Orders</p></li></Link>
                         <Link to="reports">
-                        <li className="menuItem"><Icons.Reports /> <p>Reports</p></li></Link>
+                        <li className={selected === "reports" ? "active" : ""} onClick={()=> setSelected("reports")}><Icons.Reports /> <p>Reports</p></li></Link>
                         <Link to="settings">
-                        <li className="menuItem"><Icons.Settings /> <p>Settings</p></li></Link>
+                        <li className={selected === "settings" ? "active" : ""} onClick={()=> setSelected("settings")}><Icons.Settings /> <p>Settings</p></li></Link>
                         <Outlet />
                     </ul>
                 </div>
