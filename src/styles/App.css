@@ -17,7 +17,6 @@
 .Mainlayout .right{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 85%;
   height: 100%;
   background-color: #f0f0f0;
